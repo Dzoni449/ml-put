@@ -106,3 +106,27 @@ if pogodjen:
     print(f"Poeni: {poeni}")
 else:
     print(f"Kraj igre! Tajni broj je bio {tajni_broj}.")
+
+
+
+
+
+
+
+
+   while broj_pokusaja <=3:
+        if unos == tajni_broj and broj_pokusaja == 1:
+            print(f"Pogodio si iz {broj_pokusaja}. pokusaja!")
+            poeni += 100
+            broj_pokusaja+=1
+        elif unos == tajni_broj and broj_pokusaja == 2:
+            print(f"Pogodio si iz {broj_pokusaja}. pokusaja!")
+            poeni += 60
+            broj_pokusaja+=1
+        elif unos == tajni_broj and broj_pokusaja == 3:
+            print(f"Pogodio si iz {broj_pokusaja}. pokusaja!")
+            poeni += 30
+            broj_pokusaja+=1
+        else:
+            unos = input(f"Pokušaj {broj_pokusaja}: ").strip()
+            broj_pokusaja+=1
